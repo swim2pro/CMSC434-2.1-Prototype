@@ -1,0 +1,57 @@
+#center-text {
+  text-align: center;
+}
+
+#datetime {
+  color: 	#C0C0C0;
+}
+
+#shopping-list {
+  text-align: center;
+  border: 2px solid silver;
+  /* border-color: black; */
+}
+
+.Row {
+  display: inline;
+  position: relative;
+  width: 100%;
+}
+
+.Column {
+  display: inline-block;
+  border: 2px solid black;
+  text-align: center;
+  /* height: 90% */
+  float: left;
+  width: 9%;
+}
+
+.Side-Column {
+  display: inline-block;
+  /* border: 2px solid silver; */
+  /* text-align:left; */
+  /* height: 90% */
+  float: left;
+  width: 30%;
+}
+
+.list-icon-row {
+  padding: 10px;
+}
+
+.fas-fa-plus {
+  padding-top: 10px;
+  display: 40%;
+  float: left;
+}
+
+.fas-fa-minus {
+  padding-top: 10px;
+  display: 40%;
+  float: left;
+}
+
+#Welcome {
+  text-align: center;
+}
