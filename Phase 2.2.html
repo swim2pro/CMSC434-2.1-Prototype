@@ -9,7 +9,7 @@
     <title>Smart Refridgerator Phase 2.2</title>
 </head>
 
-<body>
+<body onload="UpdateTime()">
   <div id="title-block" class="Row">
     <!-- <h3 id="center-text">This is the fridge </h3> -->
     <br>
@@ -21,8 +21,12 @@
     <h3 id="center-text">
       <p><span id="datetime"></span></p>
       <script>
-      var dt = new Date();
-      document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+        function UpdateTime(){
+          var dt = new Date();
+          document.getElementById("datetime").innerHTML = dt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+          
+          setTimeout("UpdateTime()", 1000);
+        }
       </script>
     </h3>
   </div>
