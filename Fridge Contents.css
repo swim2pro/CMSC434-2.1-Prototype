@@ -1,3 +1,11 @@
+#center-text {
+  text-align: center;
+}
+
+#datetime {
+  color: 	#C0C0C0;
+}
+
 .Row {
   display: inline;
   position: relative;
