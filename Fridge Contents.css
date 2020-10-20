@@ -1,0 +1,14 @@
+.Row {
+  display: inline;
+  position: relative;
+  width: 100%;
+}
+
+.Column {
+  display: inline-block;
+  border: 2px solid black;
+  text-align: center;
+  /* height: 90% */
+  float: left;
+  width: 9%;
+}
