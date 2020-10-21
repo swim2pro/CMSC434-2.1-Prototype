@@ -2,76 +2,76 @@
 <html>
 
 
-<head>
-    <meta charset="utf-8" />
-    <link type="text/css" rel="stylesheet" href="Phase 2.1.css"/>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Smart Refridgerator Phase 2.2</title>
-</head>
+  <head>
+      <meta charset="utf-8" />
+      <link type="text/css" rel="stylesheet" href="Phase 2.1.css"/>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <title>Smart Refridgerator Phase 2.2</title>
+  </head>
 
-<body onload="UpdateTime()">
-  <div id="title-block" class="Row">
-    <!-- <h3 id="center-text">This is the fridge </h3> -->
-    <br>
-    <div class="Column"> <i class="fas fa-home"></i> </div>
-    <div class="Column"> <i class="fas fa-cog"></i> </div>
-    <div class="Column"> <a href="Quick Add.html">Quick Add</a> </div>
-    <div class="Column"> <a href="Fridge Contents.html">Fridge Contents </a> </div>
-    <br>
-    <h3 id="center-text">
-      <p><span id="datetime"></span></p>
-      <script>
-        function UpdateTime(){
-          var dt = new Date();
-          document.getElementById("datetime").innerHTML = dt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  <body onload="UpdateTime()">
+    <div id="title-block" class="Row">
+      <!-- <h3 id="center-text">This is the fridge </h3> -->
+      <br>
+      <div class="Column"> <i class="fas fa-home"></i> </div>
+      <div class="Column"> <i class="fas fa-cog"></i> </div>
+      <div class="Column"> <a href="Quick Add.html">Quick Add</a> </div>
+      <div class="Column"> <a href="Fridge Contents.html">Fridge Contents </a> </div>
+      <br>
+      <h3 id="center-text">
+        <p><span id="datetime"></span></p>
+        <script>
+          function UpdateTime(){
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
-          setTimeout("UpdateTime()", 1000);
-        }
-      </script>
-    </h3>
-  </div>
-  <hr>
-  <div id="lower-body">
-    <div class="Row">
-      <div id="shopping-list" class="Side-Column">
-        <h4>Shopping List</h4>
-        <!-- <br> -->
-        <p>eggs</p>
-        <hr>
-        <!-- <br> -->
-        <p>milk</p>
-        <hr>
-        <p>orange juice</p>
-        <hr>
-        <br>
-        <hr>
-        <br>
-        <hr>
-        <br>
-        <hr>
-        <br>
-        <hr>
-        <!-- <br> -->
-        <div class="list-icon-row">
-          <i class="fas fa-plus"></i>
-          <i class="fas fa-minus"></i>
+            setTimeout("UpdateTime()", 1000);
+          }
+        </script>
+      </h3>
+    </div>
+    <hr>
+    <div id="lower-body">
+      <div class="Row">
+        <div id="shopping-list" class="Side-Column">
+          <h4>Shopping List</h4>
+          <!-- <br> -->
+          <p>eggs</p>
+          <hr>
+          <!-- <br> -->
+          <p>milk</p>
+          <hr>
+          <p>orange juice</p>
+          <hr>
+          <br>
+          <hr>
+          <br>
+          <hr>
+          <br>
+          <hr>
+          <br>
+          <hr>
+          <!-- <br> -->
+          <div class="list-icon-row">
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+        </div>
+        <h4 id="Welcome">Welcome Beyoncé!</h4>
+        <div id="fridge-temp">
+
         </div>
       </div>
-      <h4 id="Welcome">Welcome Beyoncé!</h4>
-      <div id="fridge-temp">
+      <div class="Row">
+        <!-- <div id="">
+
+        </div> -->
 
       </div>
     </div>
-    <div class="Row">
-      <!-- <div id="">
-
-      </div> -->
-
-    </div>
-  </div>
 
 
 
 
-</body>
+  </body>
 </html>
