@@ -6,12 +6,9 @@
   color: 	#C0C0C0;
 }
 
-#input-item {
-  text-align: center;
-}
-
 #item-entry {
-  margin: auto;
+  text-align: center;
+  border: solid 3px black;
 }
 
 .Row {

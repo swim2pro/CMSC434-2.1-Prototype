@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8"/>
-    <link type="text/css" rel="stylesheet" href="Fridge Contents.css"/>
+    <link type="text/css" rel="stylesheet" href="Quick Add.css"/>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Fridge Contents</title>
   </head>
@@ -31,9 +31,16 @@
     <div id="lower-body">
       <div id="item-entry">
         <h3 id="center-text"> Enter item to add: </h3>
-        <label for="fname">Item belongs to: </label>
+        <label for="owner-name">Item belongs to: </label>
         <br>
-        <input type="text" id="input-item" name="item"><br><br>
+        <input type="text" name="name" value="owner name"><br><br>
+        <input type="text" name="item" value="Item">
+        <br>
+        <br>
+        <label for="expiration-date">Expires on: </label>
+        <input type="date" name="expiration-date" value="">
+        <br>
+        <input type="submit" name="confirm" value="Confirm">
       </div>
     </div>
   </body>
