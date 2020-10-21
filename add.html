@@ -4,6 +4,8 @@
     <meta charset="utf-8"/>
     <link type="text/css" rel="stylesheet" href="add.css"/>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="add.js"></script>
     <title>Fridge Contents</title>
   </head>
   <body onload="UpdateTime()">
@@ -33,14 +35,14 @@
         <h3 id="center-text"> Enter item to add: </h3>
         <label for="owner-name">Item belongs to: </label>
         <br>
-        <input type="text" name="name" value="owner name"><br><br>
-        <input type="text" name="item" value="Item">
+        <input type="text" name="name" placeholder="owner name" id="name"><br><br>
+        <input type="text" name="item" placeholder="Item" id="item">
         <br>
         <br>
         <label for="expiration-date">Expires on: </label>
         <input type="date" name="expiration-date" value="">
         <br>
-        <input type="submit" name="confirm" value="Confirm">
+        <input type="submit" name="confirm" value="Confirm" id="confirm">
       </div>
     </div>
   </body>
