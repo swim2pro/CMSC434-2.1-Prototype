@@ -23,10 +23,11 @@
       <script>
         function UpdateTime(){
           var dt = new Date();
-          document.getElementById("datetime").innerHTML = dt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+          document.getElementById("datetime").innerHTML = dt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });;
 
           setTimeout("UpdateTime()", 1000);
         }
+      
       </script>
     </h3>
     <hr>
@@ -40,9 +41,24 @@
         <br>
         <br>
         <label for="expiration-date">Expires on: </label>
-        <input type="date" name="expiration-date" value="">
+        <input type="date" name="expiration-date" id="expiration-date" value="">
         <br>
         <input type="submit" name="confirm" value="Confirm" id="confirm">
+      </div>
+    </div>
+    <div id = "table-body">
+      <div>
+        <table class = "table">
+          <tr class="table-tr-header">
+            <th id = "th-name" data-column = "name" data-order = "desc"> Owner &#9650</th>
+            <th id = "th-item" data-column = "item" data-order = "desc"> Item &#9650</th>
+            <th id = "th-date" data-column = "date" data-order = "desc"> Expiration Date &#9650</th>
+          </tr>
+
+          <tbody id="contentsTable"> 
+
+          </tbody>
+        </table>
       </div>
     </div>
   </body>
