@@ -1,25 +1,49 @@
-body {
- background-color: #c4c4a060;
-}
 
+/* General */
+body {
+ background-color:#c4c4a060;
+ font-family:sans-serif;
+ padding:0;
+ margin:0;
+}
 a {
   color: #D6B015;
 }
-
-#center-text {
+.center {
   text-align: center;
 }
 
+/* Specific elements */
 #datetime {
   color: 	#757571;
 }
 
+/* Navbar */
+.navbar{
+  background-color:black;
+  color:white;
+}
+.navbar > div{
+  display:inline-block;
+  text-align:center;
+  padding:10px 45px;
+  margin:10px 0;
+}
+.navbar > div:not(:last-child){
+  border-right:solid 1px white;
+}
+.navbar span{
+  display:block;
+}
+
+/* Shopping list */
 #shopping-list {
   text-align: center;
   border: 2px solid silver;
   /* border-color: black; */
 }
 
+/* Other */
 .Row {
   display: inline;
   position: relative;

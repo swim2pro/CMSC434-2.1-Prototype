@@ -1,24 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css"/>
-    <title>Smart Refridgerator Phase 2.2</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="jquery.min.js"></script>
-    <script src="script.js"></script>
+      <meta charset="utf-8" />
+      <link type="text/css" rel="stylesheet" href="style.css"/>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <title>Smart Refridgerator Phase 2.2</title>
   </head>
-  <body>
 
-    <!-- Navigation bar -->
-    <!--<div id="title-block" class="Row">
+  <body onload="UpdateTime()">
+    <div id="title-block" class="Row">
+      <!-- <h3 id="center-text">This is the fridge </h3> -->
       <br>
       <div class="Column"> <i class="fas fa-home"></i> </div>
       <div class="Column"> <i class="fas fa-cog"></i> </div>
       <div class="Column"> <a href="add.html">Quick Add</a> </div>
       <div class="Column"> <a href="contents.html">Fridge Contents </a> </div>
       <br>
-      <h3 class="center">
+      <h3 id="center-text">
         <p><span id="datetime"></span></p>
         <script>
           function UpdateTime(){
@@ -30,33 +28,15 @@
         </script>
       </h3>
     </div>
-    <hr>-->
-    <div class="navbar">
-      <div class="icon-home">
-        <i class="fas fa-home"></i>
-        <span>Home</span>
-      </div>
-      <div class="icon-settings">
-        <i class="fas fa-cog"></i>
-        <span>Settings</span>
-      </div>
-      <div class="icon-add">
-        <span>+</span>
-        <span>Add</span>
-      </div>
-      <div class="icon-contents">
-        <span>=</span>
-        <span>Contents</span>
-      </div>
-    </div>
-
-    <!-- Home view -->
-    <div class="view home-view">
+    <hr>
+    <div id="lower-body">
       <div class="Row">
         <div id="shopping-list" class="Side-Column">
           <h4 class="component-title">Shopping List</h4>
+          <!-- <br> -->
           <p>eggs</p>
           <hr>
+          <!-- <br> -->
           <p>milk</p>
           <hr>
           <p>orange juice</p>
@@ -80,16 +60,14 @@
 
         </div>
       </div>
-      <div class="Row"></div>
+      <div class="Row">
+        <!-- <div id="">
+
+        </div> -->
+
+      </div>
     </div>
 
-    <!-- Fridge contents view -->
-    <div class="view contents-view">
-      <table id="data_table">
-        <tr>  <th>Owner</th> <th>Item</th>  <th>Expiration Date</th>  </tr>
-      </table>
-
-    </div>
 
   </body>
 </html>
