@@ -7,30 +7,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="add.js"></script>
   </head>
   <body>
 
     <!-- Navigation bar -->
-    <!--<div id="title-block" class="Row">
-      <br>
-      <div class="Column"> <i class="fas fa-home"></i> </div>
-      <div class="Column"> <i class="fas fa-cog"></i> </div>
-      <div class="Column"> <a href="add.html">Quick Add</a> </div>
-      <div class="Column"> <a href="contents.html">Fridge Contents </a> </div>
-      <br>
-      <h3 class="center">
-        <p><span id="datetime"></span></p>
-        <script>
-          function UpdateTime(){
-            var dt = new Date();
-            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-            setTimeout("UpdateTime()", 1000);
-          }
-        </script>
-      </h3>
-    </div>
-    <hr>-->
     <div class="navbar">
       <div class="icon-home">
         <i class="fas fa-home"></i>
@@ -89,6 +70,52 @@
         <tr>  <th>Owner</th> <th>Item</th>  <th>Expiration Date</th>  </tr>
       </table>
 
+    </div>
+
+    <!-- Fridge add view -->
+    <div class="view add-view">
+      <div id="item-entry">
+        <table class="Row">
+          <tr>
+            <td>
+              <img src="images/fridge_clipart2.png"
+                alt="An open refrigerator clip-art">
+            </td>
+            <td>
+              <h3 class="center"> Enter item to add: </h3>
+              <label for="owner-name">Item belongs to: </label>
+              <br>
+              <input type="text" name="name" placeholder="owner name" id="name"><br><br>
+              <input type="text" name="item" placeholder="Item" id="item">
+              <br>
+              <br>
+              <label for="expiration-date">Expires on: </label>
+              <input type="date" name="expiration-date" id="expiration-date" value="">
+              <br>
+              <input type="submit" name="confirm" value="Confirm" id="confirm">
+            </td>
+            <td>
+              <img src="images/fridge_clipart.png"
+                alt="An open refrigerator clip-art">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id = "table-body">
+        <div>
+          <table class = "table">
+            <tr class="table-tr-header">
+              <th id = "th-name" data-column = "name" data-order = "desc"> Owner &#9650;</th>
+              <th id = "th-item" data-column = "item" data-order = "desc"> Item &#9650;</th>
+              <th id = "th-date" data-column = "date" data-order = "desc"> Expiration Date &#9650;</th>
+            </tr>
+
+            <tbody id="contentsTable">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
   </body>

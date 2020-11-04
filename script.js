@@ -9,6 +9,7 @@ $(document).ready(function(){
 
   $(".icon-home").click(() => setView(".home-view"));
   $(".icon-contents").click(() => setView(".contents-view"));
+  $(".icon-add").click(() => setView(".add-view"));
   setView(".home-view");
 
 });

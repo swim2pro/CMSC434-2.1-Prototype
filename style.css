@@ -43,6 +43,12 @@ a {
   /* border-color: black; */
 }
 
+/* Add */
+#item-entry {
+  text-align: center;
+  border: solid 3px black;
+}
+
 /* Other */
 .Row {
   display: inline;
