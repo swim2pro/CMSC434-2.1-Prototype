@@ -1,21 +1,27 @@
-
 /* General */
 body {
- background-color:#c4c4a060;
+ background-color:#345eeb;
  font-family:sans-serif;
  padding:0;
  margin:0;
+ color: #FFFFFF;
+ font-size: 100%;
 }
-a {
-  color: #D6B015;
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
 }
+
 .center {
   text-align: center;
 }
 
 /* Specific elements */
 #datetime {
-  color: 	#757571;
+  color: 	#FFFFFF;
 }
 
 /* Navbar */
@@ -39,7 +45,12 @@ a {
 /* Shopping list */
 #shopping-list {
   text-align: center;
-  border: 2px solid silver;
+  /* border-color: black; */
+}
+
+/* Expiration Manager */
+#expr8-man {
+  text-align: center;
   /* border-color: black; */
 }
 
@@ -51,9 +62,9 @@ a {
 
 /* Other */
 .Row {
-  display: inline;
+  display: inline-flex;
   position: relative;
-  width: 100%;
+  width: 110%;
 }
 
 .Column {
@@ -71,18 +82,19 @@ a {
 
 .Side-Column {
   display: inline-block;
-  box-shadow: 5px 5px 25px;
+  box-shadow: 10px 10px 30px 10px;
   /* border: 2px solid silver; */
   /* text-align:left; */
   /* height: 90% */
-  float: left;
+  /* float: left; */
+  text-align: center;
   width: 30%;
 }
 
 .list-icon-row {
   padding: 10px;
   background-color: #000000;
-  color: #D6B015;
+  color: #FFFFFF;
 
 }
 
@@ -103,6 +115,6 @@ a {
 }
 
 .component-title {
-  background-color: #D6B015;
+  background-color: #FFFFFF;
   color: #000000;
 }
