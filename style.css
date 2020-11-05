@@ -69,26 +69,21 @@ table {
 
 .Column {
   display: inline-block;
-  padding: 5px;
-  border: 2px solid #c4c4a060;
+  box-shadow: 10px 10px 30px 10px;
   text-align: center;
-  font-weight: bold;
-  background-color: #000000;
-  color: #D6B015;
-  /* height: 90% */
-  float: left;
-  width: 12%;
+  width: 100%;
 }
 
 .Side-Column {
   display: inline-block;
   box-shadow: 10px 10px 30px 10px;
+  font-weight: bold;
   /* border: 2px solid silver; */
   /* text-align:left; */
   /* height: 90% */
   /* float: left; */
   text-align: center;
-  width: 30%;
+  width: 70%;
 }
 
 .list-icon-row {
