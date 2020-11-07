@@ -26,7 +26,7 @@ HTML, CSS, and Javascript. We chose this platform because web technology is very
   - [ ] Look under “Expiration Manager” section to see a list of soon expiring items (as stored in the smart-fridge database)
   - [ ] Touch “More” button under “Expiration Manager” section to see more expiring items
 - Style
- - [ ] Use CSS variables for coloring [Benard]
- - [ ] Change color scheme to blues and blacks (darker, cooler colors) [Benard]
+ - [x] Use CSS variables for coloring [Benard]
+ - [x] Change color scheme to blues and blacks (darker, cooler colors) [Benard]
  - [ ] Highlight selected tab on navbar [Benard or Alex]
  - [ ] Homogenize different views [Alex]
