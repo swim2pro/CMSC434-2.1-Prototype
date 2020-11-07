@@ -41,6 +41,9 @@ table {
 .navbar span{
   display:block;
 }
+.curr-page {
+  box-shadow: 3px -3px 10px 3px;
+}
 
 /* Shopping list */
 #shopping-list {
