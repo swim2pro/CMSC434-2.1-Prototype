@@ -7,7 +7,6 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="jquery.min.js"></script>
     <script src="script.js"></script>
-    <script src="add.js"></script>
   </head>
   <body>
     <!-- Navigation bar -->
@@ -15,17 +14,14 @@
       <div class="icon-home curr-page">
         <i class="fas fa-home"></i>
         <span>Home</span>
-      </div>
-      <div class="icon-settings">
+      </div><div class="icon-settings">
         <i class="fas fa-cog"></i>
         <span>Settings</span>
-      </div>
-      <div class="icon-add">
-        <span>+</span>
+      </div><div class="icon-add">
+        <i class="fas fa-plus"></i>
         <span>Add</span>
-      </div>
-      <div class="icon-contents">
-        <span>=</span>
+      </div><div class="icon-contents">
+        <i class="fas fa-list"></i>
         <span>Contents</span>
       </div>
     </div>
@@ -58,7 +54,7 @@
             <i class="fas fa-plus"></i>
             <i class="fas fa-minus"></i>
           </div>
-        </td> 
+        </td>
         <td id="fridge-temp">
           <h3>Fridge Temp: 3&deg;F</h3>
         </td>
@@ -89,7 +85,7 @@
 
         </tbody>
       </table>
-      
+
 
     </div>
 
@@ -136,10 +132,10 @@
             Recently Added
           </h1>
           <table id="recent_table_outer">
-            <tr>  
-              <th>Owner</th> 
-              <th>Item</th>  
-              <th>Expiration Date</th> 
+            <tr>
+              <th>Owner</th>
+              <th>Item</th>
+              <th>Expiration Date</th>
              </tr>
 
              <tbody id="recent_table"></tbody>

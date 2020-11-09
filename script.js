@@ -7,7 +7,7 @@ $(document).ready(function(){
   $("#confirm").click(function(){
     var name=$("#name").val();
     var item=$("#item").val();
-    
+
     var date= new Date ($("#expiration-date").val());
 
     //might want to consider adding the "added" date so we can sort by time added
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
     buildPreview(tableArray);
     buildTable(tableArray, document.getElementById("contentsTable"));
-    buildTable(recentlyAdded, document.getElementById("recent_table"));  
+    buildTable(recentlyAdded, document.getElementById("recent_table"));
   });
 
   $('th').on('click', function(){
@@ -67,11 +67,11 @@ $(document).ready(function(){
         }
 
         text+= '&#9660'
-        
+
     }else{
         $(this).data('order', "desc")
         currentOrder = "desc";
-        
+
         if(column == 'date'){
           tableSortAscend(tableArray, 'item', true);
           tableSortAscend(tableArray, 'name', true);
@@ -107,9 +107,9 @@ $(document).ready(function(){
     table.innerHTML= "";
 
     var length = tableArray.length < 10 ? (tableArray.length) : (10);
-    
+
     for(var i = 0; i < length; i++){
-    
+
       var row = `<tr>
                     <td>${data[i].item}</td>
                     <hr>
@@ -137,19 +137,21 @@ $(document).ready(function(){
     }
   }
 
-  function setView(view){
+  function setView(icon,view){
     recentlyAdded = [];
-    buildTable(recentlyAdded, document.getElementById("recent_table"));  
+    buildTable(recentlyAdded, document.getElementById("recent_table"));
+    $(".navbar > div").removeClass("curr-page");
+    $(icon).addClass("curr-page");
     $(".view").hide();
     $(view).show()
       .css("opacity","0")
       .animate({"opacity":"1"},200);
   }
 
-  $(".icon-home").click(() => setView(".home-view"));
-  $(".icon-contents").click(() => setView(".contents-view"));
-  $(".icon-add").click(() => setView(".add-view"));
-  setView(".home-view");
+  $(".icon-home").click(() => setView(".icon-home",".home-view"));
+  $(".icon-contents").click(() => setView(".icon-contents",".contents-view"));
+  $(".icon-add").click(() => setView(".icon-add",".add-view"));
+  setView(".icon-home",".home-view");
 
 });
 
@@ -157,4 +159,3 @@ $(document).ready(function(){
 
 
 //date source : https://stackoverflow.com/questions/33312318/how-to-extract-values-from-html-input-type-date-using-jquery
-

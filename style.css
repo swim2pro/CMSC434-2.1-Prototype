@@ -1,48 +1,56 @@
 /* General */
-body {
-  background-color:#345eeb;
+:root{
+  --blue:#3c7cd6;
+  --white:#ffffff;
+  --black:#112036;
+  --gray:#3e4857;
+}
+body{
+  background-color:var(--blue);
   font-family:sans-serif;
+  color: var(--white);
+  overflow-x:hidden;
   padding:0;
   margin:0;
-  color: #FFFFFF;
-  font-size: 100%;
 }
-
-table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  text-align: center;
+table{
+  text-align:center;
+  margin-right:auto;
+  margin-left:auto;
+  width:100%;
 }
-
-.center {
-  text-align: center;
+.center{
+  text-align:center;
 }
 
 /* Specific elements */
 #datetime {
-  color: 	#FFFFFF;
+  color:var(--white);
 }
 
 /* Navbar */
 .navbar{
-  background-color:black;
+  background-color:var(--black);
   color:white;
 }
 .navbar > div{
+  transition:background-color 0.1s ease;
   display:inline-block;
   text-align:center;
-  padding:10px 45px;
-  margin:10px 0;
+  padding:20px 45px;
+  cursor:pointer;
 }
 .navbar > div:not(:last-child){
   border-right:solid 1px white;
 }
+.navbar > div:hover{
+  background-color:var(--gray);
+}
 .navbar span{
   display:block;
 }
-.curr-page {
-  box-shadow: 3px -3px 10px 3px;
+.navbar .curr-page{
+  background-color:var(--gray);
 }
 
 /* Shopping list */
@@ -91,8 +99,8 @@ table {
 
 .list-icon-row {
   padding: 10px;
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: var(--black);
+  color: var(--white);
 
 }
 
@@ -113,6 +121,6 @@ table {
 }
 
 .component-title {
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: var(--white);
+  color: var(--black);
 }
