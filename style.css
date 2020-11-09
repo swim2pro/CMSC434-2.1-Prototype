@@ -22,10 +22,32 @@ table{
 .center{
   text-align:center;
 }
+.thirds{
+  grid-template-columns:33% 34% 33%;
+  display:grid;
+}
 
 /* Specific elements */
 #datetime {
   color:var(--white);
+}
+
+/* Shopping list items */
+.items{
+  font-weight:bold;
+}
+.component-title{
+  background-color:var(--white);
+  color:var(--black);
+  padding:15px 0;
+  margin:0;
+}
+.items > span{
+  padding:15px 0;
+  display:block;
+}
+.items > span:not(:last-child){
+  border-bottom:solid 1px var(--white);
 }
 
 /* Navbar */
@@ -56,7 +78,6 @@ table{
 /* Shopping list */
 #shopping-list {
   text-align: center;
-  /* border-color: black; */
 }
 
 /* Expiration Manager */
@@ -118,9 +139,4 @@ table{
 
 #Welcome {
   text-align: center;
-}
-
-.component-title {
-  background-color: var(--white);
-  color: var(--black);
 }

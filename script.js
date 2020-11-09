@@ -137,6 +137,7 @@ $(document).ready(function(){
     }
   }
 
+  // Set up the navigation bar buttons
   function setView(icon,view){
     recentlyAdded = [];
     buildTable(recentlyAdded, document.getElementById("recent_table"));
@@ -147,7 +148,6 @@ $(document).ready(function(){
       .css("opacity","0")
       .animate({"opacity":"1"},200);
   }
-
   $(".icon-home").click(() => setView(".icon-home",".home-view"));
   $(".icon-contents").click(() => setView(".icon-contents",".contents-view"));
   $(".icon-add").click(() => setView(".icon-add",".add-view"));
