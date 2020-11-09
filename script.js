@@ -111,7 +111,8 @@ $(document).ready(function(){
     for(var i = 0; i < length; i++){
     
       var row = `<tr>
-                    <td>${data[i].item}</td>  
+                    <td>${data[i].item}</td>
+                    <hr>
                 </tr>`
       table.innerHTML += row;
     }
