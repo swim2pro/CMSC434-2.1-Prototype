@@ -64,20 +64,11 @@
         </td>
         <td id="expr8-man" class="Side-Column">
           <h4 class="component-title">Expiring Soon</h4>
-          <p>left-over pizza</p>
-          <hr>
-          <p>blue-berries</p>
-          <hr>
-          <p>salt fish</p>
-          <hr>
-          <br>
-          <hr>
-          <br>
-          <hr>
-          <br>
-          <hr>
-          <br>
-          <hr>
+          <table>
+            <tbody id = "previewTable">
+            </tbody>
+          </table>
+
           <!-- <br> -->
           <div class="list-icon-row">
             <i class="fas fa-plus"></i>
@@ -90,9 +81,18 @@
 
     <!-- Fridge contents view -->
     <div class="view contents-view">
-      <table id="data_table">
-        <tr>  <th>Owner</th> <th>Item</th>  <th>Expiration Date</th>  </tr>
+      <table class = "table">
+        <tr class="table-tr-header">
+          <th id = "th-name" data-column = "name" data-order = "desc"> Owner &#9650;</th>
+          <th id = "th-item" data-column = "item" data-order = "desc"> Item &#9650;</th>
+          <th id = "th-date" data-column = "date" data-order = "desc"> Expiration Date &#9650;</th>
+        </tr>
+
+        <tbody id="contentsTable">
+
+        </tbody>
       </table>
+      
 
     </div>
 
@@ -135,16 +135,17 @@
         <br>
         <br>
         <div>
-          <table class = "table">
-            <tr class="table-tr-header">
-              <th id = "th-name" data-column = "name" data-order = "desc"> Owner &#9650;</th>
-              <th id = "th-item" data-column = "item" data-order = "desc"> Item &#9650;</th>
-              <th id = "th-date" data-column = "date" data-order = "desc"> Expiration Date &#9650;</th>
-            </tr>
+          <h1 align= "center">
+            Recently Added
+          </h1>
+          <table id="recent_table_outer">
+            <tr>  
+              <th>Owner</th> 
+              <th>Item</th>  
+              <th>Expiration Date</th> 
+             </tr>
 
-            <tbody id="contentsTable">
-
-            </tbody>
+             <tbody id="recent_table"></tbody>
           </table>
         </div>
       </div>
