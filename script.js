@@ -121,13 +121,33 @@ $(document).ready(function(){
   function buildTable(data, table){
     //var table = document.getElementById("contentsTable")
     table.innerHTML= "";
+    console.clear();
 
     for(var i = 0; i < data.length; i++){
 
         var date = data[i].date;
-        day = date.getDate() + 1;
-        month = date.getMonth() + 1;
         year = date.getFullYear();
+        var date_dictionary = {
+          1 : 31,
+          2 : year % 4 == 0 ? 29 : 28,
+          3 : 31,
+          4 : 30,
+          5 : 31,
+          6 : 30, 
+          7 : 31,
+          8 : 31,
+          9 : 30,
+          10: 31,
+          11: 30,
+          12: 31
+        }
+        month = date.getMonth() + 1;
+        day = date.getDate() + 1;
+        
+        if (date_dictionary[month] < day){
+          day = 1;
+          month += 1;
+        }
         var row = `<tr>
                         <td>${data[i].name}</td>
                         <td>${data[i].item}</td>
