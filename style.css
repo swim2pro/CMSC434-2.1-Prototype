@@ -35,6 +35,7 @@ table{
 /* Shopping list items */
 .items{
   font-weight:bold;
+  box-shadow: 0 0 2px var(--white);
 }
 .component-title{
   background-color:var(--white);
@@ -84,6 +85,9 @@ table{
 #expr8-man {
   text-align: center;
   /* border-color: black; */
+}
+#previewTable {
+  box-shadow: 0 0 2px var(--white);
 }
 
 /* Add */
