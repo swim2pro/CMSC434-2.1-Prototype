@@ -3,7 +3,16 @@ $(document).ready(function(){
   var tableArray = [];
   var recentlyAdded = [];
   var currentOrder = "desc";
+  var namesList = new Set();
 
+  $("#name-confirm").click(function(){
+    namesList.add($("#name-entry").val());
+    $('#name').empty();
+
+    namesList.forEach(name => {
+      $('#name').append(`<option value="${name}">${name}</option>`);
+    });
+  });
   $("#confirm").click(function(){
     var name=$("#name").val();
     var item=$("#item").val();
