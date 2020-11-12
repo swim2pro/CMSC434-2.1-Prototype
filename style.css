@@ -143,3 +143,7 @@ table{
 #Welcome {
   text-align: center;
 }
+
+#shop-remove {
+  float: right;
+}
