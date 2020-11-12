@@ -1,10 +1,25 @@
+var shoppingArray = [];
 $(document).ready(function(){
 
   var tableArray = [];
   var recentlyAdded = [];
+  
   var currentOrder = "desc";
   var namesList = new Set();
 
+  $(".shop-submit").on('click', function(){
+    var shopItem = $("#shop-item").val();
+    var shopTable = document.getElementById("shoppingTable");
+    shoppingArray.push(shopItem);
+    shopTable.innerHTML= "";
+
+    for(var i = 0; i < shoppingArray.length; i++){
+
+      $(shopTable).append($(`<tr data-rownum=${i}>`)
+      .append($(`<td>${shoppingArray[i]}</td>`)
+        .append($(`<i class="fas fa-minus" id="shop-remove">`).click(shopRemove))
+      ))}});
+  
   $("#name-confirm").click(function(){
     namesList.add($("#name-entry").val());
     $('#name').empty();
@@ -13,6 +28,7 @@ $(document).ready(function(){
       $('#name').append(`<option value="${name}">${name}</option>`);
     });
   });
+
   $("#confirm").click(function(){
     var name=$("#name").val();
     var item=$("#item").val();
@@ -184,7 +200,12 @@ $(document).ready(function(){
 
 });
 
+function shopRemove(){
 
+  shoppingArray.splice($(this).parent().parent().data("rownum"), 1);
+ $(this).parent().parent().remove();
+
+};
 
 
 //date source : https://stackoverflow.com/questions/33312318/how-to-extract-values-from-html-input-type-date-using-jquery

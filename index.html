@@ -30,14 +30,14 @@
         <div class="center">
           <h4 class="component-title">Shopping List</h4>
           <div class="items">
-            <span>eggs <i class="fas fa-minus" id="shop-remove"></i></span>
-            <span>milk</span>
-            <span>orange juice</span>
+            <table>
+              <tbody id ="shoppingTable">
+              </tbody>
+            </table>
           </div>
           <div class="list-icon-row">
-            <input type="text" name="shopping" value="">
-            <i class="fas fa-plus"></i>
-            <i class="fas fa-minus"></i>
+            <input type="text" name="shopping" id="shop-item" value="">
+            <i class="fas fa-plus shop-submit"></i>
           </div>
         </div>
         <div>
@@ -48,6 +48,7 @@
           <table>
             <tbody id = "previewTable">
             </tbody>
+            <hr>
           </table>
           <div class="list-icon-row"></div>
         </div>
