@@ -15,6 +15,7 @@ function addElement(name){
     .append(label)
     .append($("<i class=\"fas fa-trash\"></i>").click(function(){
       let i=$(this).parent().index();
+      app.deleted.push([app.items[i]]);
       dropElement(i);
     }))
   );
@@ -22,7 +23,6 @@ function addElement(name){
 function dropElement(i){
   var name=app.items[i];
   app.items.splice(i,1);
-  app.deleted.push(name);
   $(".list").children().eq(i).remove();
   if(!app.items.length){
     $(".list").append($("<p>").text("Looks like you don't have anything right now"));
@@ -47,20 +47,20 @@ $(window).ready(function(){
     $(".modal-wrapper").css("display","block");
   });
   $(".option-undo").click(function(){
-    let name=app.deleted[app.deleted.length-1];
+    let lst=app.deleted[app.deleted.length-1];
     app.deleted.splice(app.deleted.length-1,1);
-    addElement(name);
+    for(var a=0;a<lst.length;a++){
+      addElement(lst[a]);
+    }
   });
   $(".option-clear").click(function(){
+    app.deleted.push([]);
     $(".list input[type=checkbox]").each(function(){
       if($(this).prop("checked")){
-        dropElement($(this).parent().index());
+        let i=$(this).parent().index();
+        app.deleted[app.deleted.length-1].push(app.items[i])
+        dropElement(i);
       }
     });
   });
-
-  for(var a=0;a<25;a++){
-    addElement(a);
-  }
-
 });
