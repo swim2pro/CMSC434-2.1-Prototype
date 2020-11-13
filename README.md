@@ -8,25 +8,24 @@ HTML, CSS, and Javascript. We chose this platform because web technology is very
 *By the end of Phase 2, we will complete the following smart-fridge prototype elements (horizontal and vertical) [vertical elements listed in sublists below horizontal elements]:*
 - Edit shopping/grocery list [Horizontal]
   - [x] Touch plus icon under “shopping list” section to enter a new item
-  - [ ] Touch minus icon under “shopping list” section to remove a previously entered item
+  - [x] Touch minus icon under “shopping list” section to remove a previously entered item
 - Add item to smart-fridge database [Horizontal]
-  - [x] Touch “Quick Add” button
+  - [x] Touch “Add” button
   - [x] Type in item name
   - [x] Enter item owner (owner distinction is helpful when multiple users use the same fridge)
   - [x] Enter time to expiration for item
-  - [x] Touch “Save” button when done
-  - [ ] Added items are marked when the expiration date arrives
+  - [x] Touch “Confirm” button when done
+  - [x] Added items are marked when the expiration date arrives
   - [ ] Show deletion of an item consumed before expiration
 - View items stored in smart-fridge database [Horizontal]
-  - [ ] Touch “Fridge Content” button
-  - [ ] Touch “Sort By” and choose either “Expiration Date” or “Recently Added”
-  - [ ] Look at resulting table displayed
-  - [ ] Be able to toggle back and forth between the two
+  - [x] Touch “Contents” button
+  - [x] Touch arrows to sort by “Owner”, “Item”, or either “Expiration Date”
+  - [x] Look at resulting table displayed
 - View expiring items [Horizontal]
-  - [ ] Look under “Expiration Manager” section to see a list of soon expiring items (as stored in the smart-fridge database)
+  - [x] Look under “Expiration Manager” section to see a list of soon expiring items (as stored in the smart-fridge database)
   - [ ] Touch “More” button under “Expiration Manager” section to see more expiring items
 - Style
  - [x] Use CSS variables for coloring [Benard]
  - [x] Change color scheme to blues and blacks (darker, cooler colors) [Benard]
- - [ ] Highlight selected tab on navbar [Benard or Alex]
- - [ ] Homogenize different views [Alex]
+ - [x] Highlight selected tab on navbar [Benard or Alex]
+ - [x] Homogenize different views [Alex]
