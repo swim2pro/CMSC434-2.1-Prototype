@@ -16,14 +16,14 @@ HTML, CSS, and Javascript. We chose this platform because web technology is very
   - [x] Enter time to expiration for item
   - [x] Touch “Confirm” button when done
   - [x] Added items are marked when the expiration date arrives
-  - [ ] Show deletion of an item consumed before expiration
+  - ~~[ ] Show deletion of an item consumed before expiration~~
 - View items stored in smart-fridge database [Horizontal]
   - [x] Touch “Contents” button
   - [x] Touch arrows to sort by “Owner”, “Item”, or either “Expiration Date”
   - [x] Look at resulting table displayed
 - View expiring items [Horizontal]
   - [x] Look under “Expiration Manager” section to see a list of soon expiring items (as stored in the smart-fridge database)
-  - [ ] Touch “More” button under “Expiration Manager” section to see more expiring items
+  - ~~[ ] Touch “More” button under “Expiration Manager” section to see more expiring items~~
 - Style
  - [x] Use CSS variables for coloring [Benard]
  - [x] Change color scheme to blues and blacks (darker, cooler colors) [Benard]
